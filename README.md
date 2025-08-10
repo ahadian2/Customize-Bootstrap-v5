@@ -13,8 +13,8 @@
 <pre><code>npx sass --load-path=node_modules .\assets\scss\app.scss .\assets\css\bootstrap-custom.min.css --style=compressed; npx rtlcss .\assets\css\bootstrap-custom.min.css .\assets\css\bootstrap-custom.rtl.min.css</code></pre>
 <div dir="rtl">
 <p><b>خروجی‌ها:</b></p>
-<p>نسخه LTR <code>assets/css/bootstrap-custom.min.css</code></p>
-<p>نسخه RTL <code>assets/css/bootstrap-custom.rtl.min.css</code></p>
+<p>نسخه LTR بوت استرپ <code>assets/css/bootstrap-custom.min.css</code></p>
+<p>نسخه RTL بوت استرپ <code>assets/css/bootstrap-custom.rtl.min.css</code></p>
 <p></p>
 
 </div>
