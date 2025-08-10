@@ -1,41 +1,40 @@
-﻿//رنگ‌ها
-$primary: #ff5722;
-$secondary: #607d8b;
-$success: #4caf50;
-$info: #00bcd4;
-$warning: #ffc107;
-$danger: #f44336;
-$light: #f8f9fa;
-$dark: #212121;
-
-//تایپوگرافی
-$font-family-sans-serif: "Inter", Arial, sans-serif;
-$font-size-base: 1rem; // 16px
-$line-height-base: 1.6;
-
-//بدنه
-$body-bg: #ffffff;
-$body-color: #333333;
-
-//گردی گوشه‌ها
-$border-radius: .5rem;
-
-//فاصله پایه
-$spacer: 1rem;
-
-//Container
-$container-max-widths: ( 
-    sm: 540px, 
-    md: 720px, 
-    lg: 960px, 
-    xl: 1140px, 
-    xxl: 1320px 
+﻿$custom-font-sans: "Inter", Arial, sans-serif;
+@use "bootstrap/scss/variables" with (
+    //رنگ‌ها
+    $primary: #ff5722,
+    $secondary: #607d8b,
+    $success: #4caf50,
+    $info: #00bcd4,
+    $warning: #ffc107,
+    $danger: #f44336,
+    $light: #f8f9fa,
+    $dark: #212121,
+    
+    //تایپوگرافی
+    $font-family-sans-serif: $custom-font-sans,
+    $font-size-base: 1rem,
+    $line-height-base: 1.6,
+    
+    //بدنه
+    $body-bg: #ffffff,
+    $body-color: #333333,
+    
+    //گردی گوشه‌ها
+    $border-radius: .5rem,
+    
+    //فاصله پایه
+    $spacer: 1rem,
+    
+    //Container
+    $container-max-widths: ( 
+        sm: 540px, 
+        md: 720px, 
+        lg: 960px, 
+        xl: 1140px, 
+        xxl: 1320px ),
+    
+    //تنظیمات
+    $enable-rounded: true,
+    $enable-shadows: false,
+    $enable-gradients: false,
 );
-
-//تنظیمات
-$enable-rounded: true;
-$enable-shadows: false;
-$enable-gradients: false;
-
-// ارسال متغیرها به Bootstrap
-@forward "../../../node_modules/bootstrap/scss/variables" with ( $primary: $primary, $secondary: $secondary, $success: $success, $info: $info, $warning: $warning, $danger: $danger, $light: $light, $dark: $dark, $font-family-sans-serif: $font-family-sans-serif, $font-size-base: $font-size-base, $line-height-base: $line-height-base, $body-bg: $body-bg, $body-color: $body-color, $border-radius: $border-radius, $spacer: $spacer, $container-max-widths: $container-max-widths, $enable-rounded: $enable-rounded, $enable-shadows: $enable-shadows, $enable-gradients: $enable-gradients );
