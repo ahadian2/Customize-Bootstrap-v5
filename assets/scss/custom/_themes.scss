@@ -1,0 +1,70 @@
+﻿
+//تم پیش‌فرض
+:root,
+[data-bs-theme="light"] {
+    --bs-body-bg: #ffffff;
+    --bs-body-color: #1f2937;
+    --bs-primary: #ff5722;
+    --bs-secondary: #607d8b;
+    --bs-success: #4caf50;
+    --bs-info: #00bcd4;
+    --bs-warning: #ffc107;
+    --bs-danger: #f44336;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212121;
+    
+    --bs-dahua: #0f172a;
+    --bs-dahua-rgb: 15,23,42;
+
+    /* لینک‌ها معمولاً از primary می‌گیرند */
+    --bs-link-color: var(--bs-primary);
+}
+
+//تم دارک
+[data-bs-theme="dark"] {
+    color-scheme: dark;
+    --bs-body-bg: #0f172a;
+    --bs-body-color: #e5e7eb;
+    --bs-primary: #0E71EB; /* هر رنگی خواستی بگذار */
+    --bs-secondary: #94a3b8;
+    --bs-success: #22c55e;
+    --bs-info: #38bdf8;
+    --bs-warning: #f59e0b;
+    --bs-danger: #ef4444;
+    --bs-light: #1f2937;
+    --bs-dark: #0b1324;
+    --bs-link-color: var(--bs-primary);
+    --bs-dahua-rgb: #ffffff;
+}
+
+//تم آبی
+[data-bs-theme="dahua"] {
+    --bs-body-bg: #ffffff;
+    --bs-body-color: #111827;
+    --bs-primary: #0E71EB; /* آبی برند */
+    --bs-secondary: #607d8b;
+    --bs-success: #22c55e;
+    --bs-info: #06b6d4;
+    --bs-warning: #f59e0b;
+    --bs-danger: #ef4444;
+    --bs-light: #f8fafc;
+    --bs-dark: #0f172a;
+    --bs-link-color: var(--bs-primary);
+    --bs-dahua: #0E71EB;
+}
+
+//تم ابی 2
+[data-bs-theme="dahua-2"] {
+    --bs-body-bg: #ffffff;
+    --bs-body-color: #111827;
+    --bs-primary: #21C08B; /* سبز برند */
+    --bs-secondary: #607d8b;
+    --bs-success: #16a34a;
+    --bs-info: #0ea5e9;
+    --bs-warning: #fbbf24;
+    --bs-danger: #dc2626;
+    --bs-light: #f8fafc;
+    --bs-dark: #0f172a;
+    --bs-link-color: var(--bs-primary);
+    --bs-dahua: #f59e0b;
+}
