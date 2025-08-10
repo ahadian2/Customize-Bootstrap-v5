@@ -1,1 +1,17 @@
-﻿
+﻿//فعال کردن راست چین
+$enable-rtl: true;
+
+@use "../../node_modules/bootstrap/scss/functions";
+
+// متغیرهای سفارشی
+@use "custom/variables" as *;
+
+// هسته
+@use "../../node_modules/bootstrap/scss/bootstrap" as *;
+
+// میکسین‌ها و استایل‌های سفارشی
+/*@use "custom/mixins" as *;*/
+
+//کامپوننت ها
+/*@use "components/buttons";
+@use "components/cards";*/
