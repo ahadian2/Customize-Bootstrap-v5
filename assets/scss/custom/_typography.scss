@@ -1,0 +1,28 @@
+﻿body {
+    letter-spacing: -0.5px;
+    font-feature-settings: "kern" 1, "liga" 1;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+    letter-spacing: -1px;
+}
+
+/* عناصر کد: بدون تغییر فاصله حروف */
+code, kbd, pre, samp {
+    letter-spacing: 0;
+}
+
+/* Utilities اختیاری */
+.tracking-tight {
+    letter-spacing: -0.03em !important;
+}
+
+.tracking-normal {
+    letter-spacing: 0 !important;
+}
+
+.tracking-wide {
+    letter-spacing: 0.03em !important;
+}

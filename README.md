@@ -10,7 +10,14 @@
 <h2>بیلد کردن CSS</h2>
 <p>بعد از هر تغییر در SCSS می‌توانید خروجی CSS بگیرید:</p>
 </div>
-<pre><code>npx sass --load-path=node_modules assets/scss/app.scss assets/css/bootstrap-custom.min.css --style=compressed</code></pre>
+<pre><code>npx sass --load-path=node_modules .\assets\scss\app.scss .\assets\css\bootstrap-custom.min.css --style=compressed; npx rtlcss .\assets\css\bootstrap-custom.min.css .\assets\css\bootstrap-custom.rtl.min.css</code></pre>
+<div dir="rtl">
+<p><b>خروجی‌ها:</b></p>
+<p>نسخه LTR <code>assets/css/bootstrap-custom.min.css</code></p>
+<p>نسخه RTL <code>assets/css/bootstrap-custom.rtl.min.css</code></p>
+<p></p>
+
+</div>
 
 <div dir="rtl">
 <h2>اضافه‌کردن رنگ‌های سفارشی</h2>

@@ -1,8 +1,7 @@
-﻿//فعال کردن راست چین
-$enable-rtl: true;
-
+﻿
 @use "../../node_modules/bootstrap/scss/functions";
-
+//fonts 
+@use "custom/fonts";
 // متغیرهای سفارشی
 @use "custom/variables" as theme;
 
@@ -43,7 +42,8 @@ $theme-colors-extended: (
 // تم‌ها و دارک مد
 @use "custom/themes";
 @use "custom/theme-anim";
-
+// تایپوگرافی ثابت 
+@use "custom/typography";
 
 // میکسین‌ها و استایل‌های سفارشی
 /*@use "custom/mixins" as *;*/
