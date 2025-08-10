@@ -12,10 +12,9 @@
     --bs-danger: #f44336;
     --bs-light: #f8f9fa;
     --bs-dark: #212121;
-    
-    --bs-dahua: #0f172a;
-    --bs-dahua-rgb: 15,23,42;
-
+    //رنگ سفارشی
+    --bs-color-a: #0f172a;
+    --bs-color-a-rgb: 15,23,42;
     /* لینک‌ها معمولاً از primary می‌گیرند */
     --bs-link-color: var(--bs-primary);
 }
@@ -25,7 +24,7 @@
     color-scheme: dark;
     --bs-body-bg: #0f172a;
     --bs-body-color: #e5e7eb;
-    --bs-primary: #0E71EB; /* هر رنگی خواستی بگذار */
+    --bs-primary: #0E71EB;
     --bs-secondary: #94a3b8;
     --bs-success: #22c55e;
     --bs-info: #38bdf8;
@@ -34,7 +33,11 @@
     --bs-light: #1f2937;
     --bs-dark: #0b1324;
     --bs-link-color: var(--bs-primary);
-    --bs-dahua-rgb: #ffffff;
+    //رنگ سفارشی
+    --bs-color-a: #ffffff;
+    --bs-color-a-rgb: 255,255,255;
+    --bs-color-b: #ff0000;
+    --bs-color-b-rgb: 255,0,0;
 }
 
 //تم آبی
@@ -50,7 +53,11 @@
     --bs-light: #f8fafc;
     --bs-dark: #0f172a;
     --bs-link-color: var(--bs-primary);
-    --bs-dahua: #0E71EB;
+    //رنگ سفارشی
+    --bs-color-a: #ffffff;
+    --bs-color-a-rgb: 255,255,255;
+    --bs-color-b: #ff0000;
+    --bs-color-b-rgb: 255,0,0;
 }
 
 //تم ابی 2
@@ -66,5 +73,9 @@
     --bs-light: #f8fafc;
     --bs-dark: #0f172a;
     --bs-link-color: var(--bs-primary);
-    --bs-dahua: #f59e0b;
+    //رنگ سفارشی
+    --bs-color-a: #ffffff;
+    --bs-color-a-rgb: 255,255,255;
+    --bs-color-b: #ff0000;
+    --bs-color-b-rgb: 255,0,0;
 }

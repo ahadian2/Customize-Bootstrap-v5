@@ -19,8 +19,8 @@ $theme-colors-extended: (
   "dark":      theme.$dark,
 
   //رنگ‌های سفارشی
-  "dahua":   theme.$dahua,
-  "dahua-2": theme.$dahua-2
+  "color-a": theme.$color-a,
+  "color-b": theme.$color-b
 );
 
 
@@ -41,8 +41,8 @@ $theme-colors-extended: (
 );
 
 // تم‌ها و دارک مد
-@use "custom/themes"; 
-
+@use "custom/themes";
+@use "custom/theme-anim";
 
 
 // میکسین‌ها و استایل‌های سفارشی
