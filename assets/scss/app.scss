@@ -1,0 +1,21 @@
+﻿//فعال کردن راست چین
+$enable-rtl: true;
+
+//متغیرهای پروژه
+@import "variables/variables";
+
+//پیش‌نیازها
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+//ثبت متغییر جدید
+$theme-colors: map-merge( $theme-colors, ( 
+    "brand-a": $color-brand-a,
+    "brand-b": $color-brand-b 
+));
+
+//هسته Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+//کامپوننت سفارشی
+@import "components/_sections";
