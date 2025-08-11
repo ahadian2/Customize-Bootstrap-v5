@@ -116,10 +116,18 @@ $color-b: #21c08b;</code></pre>
             });
         })();</code></pre>
 
+
 <div dir="rtl">
-<p>برای تغییر روان تم میتوانید از کد Css زیر استفاده کنید.</p>
+<h2>فونت ها</h2>
+<p>در این مسیر <code>assets/fonts/YourFont/</code> بساز. و فایل های فونت خود را در آن قرار بده.</p>
+<p>در این مسیر <code>assets/scss/custom/_fonts.scss</code> FontFace های خود را قرار میدهیم.</p>
+<p>و در مسیر <code>assets/scss/custom/_variables.scss</code> باید فونت خود را به بوت استرپ معرفی کنیم.</p>
 </div>
-<pre><code></code></pre>
+<pre><code>$font-sans: "Vazirmatn", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;</code></pre>
+
+
+
+
 
 
 <div dir="rtl">
