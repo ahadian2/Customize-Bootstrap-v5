@@ -1,43 +1,70 @@
 ﻿
+@use "sass:color";
+//تبدیل کننده رنگ hex به rgb
+@mixin set-pair($name, $value) {
+    --bs-#{$name}: #{$value};
+    --bs-#{$name}-rgb: #{red($value)}, #{green($value)}, #{blue($value)};
+}
+
 //تم پیش‌فرض
 :root,
 [data-bs-theme="light"] {
-    --bs-body-bg: #ffffff;
-    --bs-body-color: #1f2937;
-    --bs-primary: #ff5722;
-    --bs-secondary: #607d8b;
-    --bs-success: #4caf50;
-    --bs-info: #00bcd4;
-    --bs-warning: #ffc107;
-    --bs-danger: #f44336;
-    --bs-light: #f8f9fa;
-    --bs-dark: #212121;
+    //رنگ اصلی
+    @include set-pair(primary, #113F67);
+    @include set-pair(secondary, #113F67);
+    @include set-pair(body-bg, #FDF5AA);
+    @include set-pair(body-color, #113F67);
+    @include set-pair(light, #113F67);
+    @include set-pair(dark, #113F67);
     //رنگ سفارشی
-    --bs-color-a: #0f172a;
-    --bs-color-a-rgb: 15,23,42;
-    /* لینک‌ها معمولاً از primary می‌گیرند */
+    @include set-pair(--bs-color-a, #f59e0b);
+    @include set-pair(--bs-color-b, #c80def);
+    //متفرقه
+    @include set-pair(success, #4caf50);
+    @include set-pair(info, #00bcd4);
+    @include set-pair(warning, #ffc107);
+    @include set-pair(danger, #f44336);
+    //لینک
     --bs-link-color: var(--bs-primary);
+    //فرم
+    --bs-form-control-focus-border-color: var(--bs-primary);
+    --bs-form-control-focus-box-shadow: 0 0 0 .25rem rgba(var(--bs-primary-rgb), .25);
+    --bs-form-select-focus-border-color: var(--bs-primary);
+    --bs-form-select-focus-box-shadow: 0 0 0 .25rem rgba(var(--bs-primary-rgb), .25);
+    --bs-form-check-input-checked-bg: var(--bs-primary);
+    --bs-form-check-input-checked-border-color: var(--bs-primary);
+    --bs-form-check-input-focus-box-shadow: 0 0 0 .25rem rgba(var(--bs-primary-rgb), .25);
+    --bs-form-range-thumb-bg: var(--bs-primary);
 }
 
 //تم دارک
 [data-bs-theme="dark"] {
-    color-scheme: dark;
-    --bs-body-bg: #0f172a;
-    --bs-body-color: #e5e7eb;
-    --bs-primary: #0E71EB;
-    --bs-secondary: #94a3b8;
-    --bs-success: #22c55e;
-    --bs-info: #38bdf8;
-    --bs-warning: #f59e0b;
-    --bs-danger: #ef4444;
-    --bs-light: #1f2937;
-    --bs-dark: #0b1324;
-    --bs-link-color: var(--bs-primary);
+    //رنگ اصلی
+    @include set-pair(primary, #7414e5);
+    @include set-pair(secondary, #113F67);
+    @include set-pair(body-bg, #2a2819);
+    @include set-pair(body-color, #2996f5);
+    @include set-pair(light, #2b94ef);
+    @include set-pair(dark, #1b6cb3);
     //رنگ سفارشی
-    --bs-color-a: #ffffff;
-    --bs-color-a-rgb: 255,255,255;
-    --bs-color-b: #ff0000;
-    --bs-color-b-rgb: 255,0,0;
+    @include set-pair(--bs-color-a, #f59e0b);
+    @include set-pair(--bs-color-b, #c80def);
+    //متفرقه
+    @include set-pair(success, #4caf50);
+    @include set-pair(info, #00bcd4);
+    @include set-pair(warning, #ffc107);
+    @include set-pair(danger, #f44336);
+    //لینک
+    --bs-link-color: var(--bs-primary);
+    //فرم
+    --bs-form-control-focus-border-color: var(--bs-primary);
+    --bs-form-control-focus-box-shadow: 0 0 0 .25rem rgba(var(--bs-primary-rgb), .25);
+    --bs-form-select-focus-border-color: var(--bs-primary);
+    --bs-form-select-focus-box-shadow: 0 0 0 .25rem rgba(var(--bs-primary-rgb), .25);
+    --bs-form-check-input-checked-bg: var(--bs-primary);
+    --bs-form-check-input-checked-border-color: var(--bs-primary);
+    --bs-form-check-input-focus-box-shadow: 0 0 0 .25rem rgba(var(--bs-primary-rgb), .25);
+    --bs-form-range-thumb-bg: var(--bs-primary);
 }
 
 //تم آبی
@@ -76,6 +103,7 @@
     //رنگ سفارشی
     --bs-color-a: #ffffff;
     --bs-color-a-rgb: 255,255,255;
+
     --bs-color-b: #ff0000;
     --bs-color-b-rgb: 255,0,0;
 }

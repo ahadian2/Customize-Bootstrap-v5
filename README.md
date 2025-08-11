@@ -119,13 +119,18 @@ $color-b: #21c08b;</code></pre>
 
 <div dir="rtl">
 <h2>فونت ها</h2>
-<p>در این مسیر <code>assets/fonts/YourFont/</code> بساز. و فایل های فونت خود را در آن قرار بده.</p>
-<p>در این مسیر <code>assets/scss/custom/_fonts.scss</code> FontFace های خود را قرار میدهیم.</p>
+<p>در این مسیر <code>assets/fonts/YourFont/</code> فایل های فونت خود را کپی کن.</p>
+<p>در این مسیر <code>assets/scss/custom/_fonts.scss</code> فونت فیس های خود را قرار میدهیم.</p>
 <p>و در مسیر <code>assets/scss/custom/_variables.scss</code> باید فونت خود را به بوت استرپ معرفی کنیم.</p>
+<p>بهتر است در این مسیر هم <code>assets/scss/custom/_typography.scss</code> فونت معرفی شود.</p>
 </div>
 <pre><code>$font-sans: "Vazirmatn", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;</code></pre>
 
 
+<div dir="rtl">
+<h2>تایپوگرافی سراسری پروژه</h2>
+<p>در این مسیر <code>assets/scss/custom/_typography.scss</code> میتوانید تایپوگرافی سراسری پروژه را تنظیم کنید. </p>
+</div>
 
 
 
