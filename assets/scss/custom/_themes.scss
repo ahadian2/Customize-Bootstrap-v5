@@ -1,109 +1,108 @@
-﻿
-@use "sass:color";
+﻿@use "sass:color";
 //تبدیل کننده رنگ hex به rgb
 @mixin set-pair($name, $value) {
     --bs-#{$name}: #{$value};
     --bs-#{$name}-rgb: #{red($value)}, #{green($value)}, #{blue($value)};
 }
-
 //تم پیش‌فرض
 :root,
 [data-bs-theme="light"] {
-    //رنگ اصلی
-    @include set-pair(primary, #113F67);
-    @include set-pair(secondary, #113F67);
-    @include set-pair(body-bg, #FDF5AA);
-    @include set-pair(body-color, #113F67);
-    @include set-pair(light, #113F67);
-    @include set-pair(dark, #113F67);
-    //رنگ سفارشی
-    @include set-pair(--bs-color-a, #f59e0b);
-    @include set-pair(--bs-color-b, #c80def);
-    //متفرقه
+    // رنگ اصلی
+    @include set-pair(primary, #7C93A6);
+    @include set-pair(secondary, #A1CCD1);
+    @include set-pair(body-bg, #FCDADA);
+    @include set-pair(body-color, #7C93A6);
+    @include set-pair(light, #F4BFBF);
+    @include set-pair(dark, #7C93A6);
+    // رنگ سفارشی
+    @include set-pair(--bs-color-a, #A1CCD1); // آبی روشن
+    @include set-pair(--bs-color-b, #F4BFBF); // صورتی ملایم
+    // متفرقه
     @include set-pair(success, #4caf50);
     @include set-pair(info, #00bcd4);
     @include set-pair(warning, #ffc107);
     @include set-pair(danger, #f44336);
-    //لینک
-    --bs-link-color: var(--bs-primary);
-    //فرم
-    --bs-form-control-focus-border-color: var(--bs-primary);
-    --bs-form-control-focus-box-shadow: 0 0 0 .25rem rgba(var(--bs-primary-rgb), .25);
-    --bs-form-select-focus-border-color: var(--bs-primary);
-    --bs-form-select-focus-box-shadow: 0 0 0 .25rem rgba(var(--bs-primary-rgb), .25);
-    --bs-form-check-input-checked-bg: var(--bs-primary);
-    --bs-form-check-input-checked-border-color: var(--bs-primary);
-    --bs-form-check-input-focus-box-shadow: 0 0 0 .25rem rgba(var(--bs-primary-rgb), .25);
-    --bs-form-range-thumb-bg: var(--bs-primary);
+    --bs-form-control-focus-border-color: #ff0000;
+    --bs-form-control-focus-border-color-rgb: 255,0,0,0;
 }
 
 //تم دارک
 [data-bs-theme="dark"] {
-    //رنگ اصلی
-    @include set-pair(primary, #7414e5);
-    @include set-pair(secondary, #113F67);
-    @include set-pair(body-bg, #2a2819);
-    @include set-pair(body-color, #2996f5);
-    @include set-pair(light, #2b94ef);
-    @include set-pair(dark, #1b6cb3);
-    //رنگ سفارشی
-    @include set-pair(--bs-color-a, #f59e0b);
-    @include set-pair(--bs-color-b, #c80def);
-    //متفرقه
-    @include set-pair(success, #4caf50);
-    @include set-pair(info, #00bcd4);
-    @include set-pair(warning, #ffc107);
-    @include set-pair(danger, #f44336);
-    //لینک
-    --bs-link-color: var(--bs-primary);
-    //فرم
-    --bs-form-control-focus-border-color: var(--bs-primary);
-    --bs-form-control-focus-box-shadow: 0 0 0 .25rem rgba(var(--bs-primary-rgb), .25);
-    --bs-form-select-focus-border-color: var(--bs-primary);
-    --bs-form-select-focus-box-shadow: 0 0 0 .25rem rgba(var(--bs-primary-rgb), .25);
-    --bs-form-check-input-checked-bg: var(--bs-primary);
-    --bs-form-check-input-checked-border-color: var(--bs-primary);
-    --bs-form-check-input-focus-box-shadow: 0 0 0 .25rem rgba(var(--bs-primary-rgb), .25);
-    --bs-form-range-thumb-bg: var(--bs-primary);
+    // رنگ‌های تیره شده بر اساس پالت
+    @include set-pair(primary, #5A6D7C); 
+    @include set-pair(secondary, #6A8B90); 
+    @include set-pair(body-bg, #2B2B2B); 
+    @include set-pair(body-color, #E0E0E0); 
+    @include set-pair(light, #B88888); //
+    @include set-pair(dark, #1E1E1E);
+    // رنگ سفارشی
+    @include set-pair(--bs-color-a, #7A9EA3);
+    @include set-pair(--bs-color-b, #B87C7C);
+    // متفرقه
+    @include set-pair(success, #388e3c);
+    @include set-pair(info, #0097a7);
+    @include set-pair(warning, #ffa000);
+    @include set-pair(danger, #d32f2f);
 }
 
-//تم آبی
-[data-bs-theme="dahua"] {
-    --bs-body-bg: #ffffff;
-    --bs-body-color: #111827;
-    --bs-primary: #0E71EB; /* آبی برند */
-    --bs-secondary: #607d8b;
-    --bs-success: #22c55e;
-    --bs-info: #06b6d4;
-    --bs-warning: #f59e0b;
-    --bs-danger: #ef4444;
-    --bs-light: #f8fafc;
-    --bs-dark: #0f172a;
-    --bs-link-color: var(--bs-primary);
-    //رنگ سفارشی
-    --bs-color-a: #ffffff;
-    --bs-color-a-rgb: 255,255,255;
-    --bs-color-b: #ff0000;
-    --bs-color-b-rgb: 255,0,0;
-}
 
-//تم ابی 2
-[data-bs-theme="dahua-2"] {
-    --bs-body-bg: #ffffff;
-    --bs-body-color: #111827;
-    --bs-primary: #21C08B; /* سبز برند */
-    --bs-secondary: #607d8b;
-    --bs-success: #16a34a;
-    --bs-info: #0ea5e9;
-    --bs-warning: #fbbf24;
-    --bs-danger: #dc2626;
-    --bs-light: #f8fafc;
-    --bs-dark: #0f172a;
-    --bs-link-color: var(--bs-primary);
-    //رنگ سفارشی
-    --bs-color-a: #ffffff;
-    --bs-color-a-rgb: 255,255,255;
+//همه تم ها
+:root[data-bs-theme],
+[data-bs-theme] {
+    /* input / textarea */
+    .form-control:focus {
+        border-color: var(--bs-primary) !important;
+        box-shadow: 0 0 0 .25rem color-mix(in srgb, var(--bs-primary), transparent 75%) !important;
+        outline: 0;
+    }
+    /* select */
+    .form-select:focus {
+        border-color: var(--bs-primary) !important;
+        box-shadow: 0 0 0 .25rem color-mix(in srgb, var(--bs-primary), transparent 75%) !important;
+        outline: 0;
+    }
+    /* checkbox / radio / switch */
+    .form-check-input:checked {
+        background-color: var(--bs-primary) !important;
+        border-color: var(--bs-primary) !important;
+    }
 
-    --bs-color-b: #ff0000;
-    --bs-color-b-rgb: 255,0,0;
+    .form-check-input:focus {
+        box-shadow: 0 0 0 .25rem color-mix(in srgb, var(--bs-primary), transparent 75%) !important;
+        border-color: var(--bs-primary) !important;
+    }
+    /* range */
+    .form-range::-webkit-slider-thumb {
+        background-color: var(--bs-primary) !important;
+    }
+
+    .form-range::-moz-range-thumb {
+        background-color: var(--bs-primary) !important;
+    }
+    /* Dropdown (متغیرهای تمی) */
+    .dropdown-menu {
+        background-color: var(--bs-dropdown-bg) !important;
+        color: var(--bs-dropdown-color) !important;
+        border-color: var(--bs-dropdown-border-color) !important;
+    }
+
+    .dropdown-divider {
+        border-top-color: var(--bs-dropdown-divider-bg) !important;
+    }
+
+    .dropdown-item {
+        color: var(--bs-dropdown-link-color) !important;
+    }
+
+    .dropdown-item:hover,
+    .dropdown-item:focus {
+        color: var(--bs-dropdown-link-hover-color) !important;
+        background-color: var(--bs-dropdown-link-hover-bg) !important;
+    }
+
+    .dropdown-item.active,
+    .dropdown-item:active {
+        color: var(--bs-dropdown-link-active-color, #fff) !important;
+        background-color: var(--bs-dropdown-link-active-bg, var(--bs-primary)) !important;
+    }
 }

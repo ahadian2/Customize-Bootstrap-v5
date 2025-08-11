@@ -1,4 +1,9 @@
-﻿$primary: #ff5722;
+﻿//متغییر های سفارشی
+$color-a: #0E71EB;
+$color-b: #21C08B; 
+
+//رنک های اصلی
+$primary: #ff5722;
 $secondary: #607d8b;
 $success: #4caf50;
 $info: #00bcd4;
@@ -7,27 +12,28 @@ $danger: #f44336;
 $light: #f8f9fa;
 $dark: #212121;
 
-/* تایپوگرافی */
+//تایپوگرافی
 $font-sans: "YekanBakhFaNum", Arial, sans-serif;
 $font-size-base: 1rem;
 $line-height-base: 1.6;
 
-/* بدنه */
+//بدنه
 $body-bg: #ffffff;
 $body-color: #333333;
 
-/* گردی و فاصله */
+//گردی و فاصله
 $border-radius: .15rem;
 $spacer: 1rem;
 
-/* Container widths */
-$container-max-widths: (sm:540px, md:720px, lg:960px, xl:1140px, xxl:1320px);
+//Container widths
+$container-max-widths: (
+    sm:540px, 
+    md:720px, 
+    lg:960px, 
+    xl:1140px, 
+    xxl:1320px);
 
-/* سوییچ‌ها */
+//سوییچ‌ها
 $enable-rounded: true;
 $enable-shadows: false;
 $enable-gradients: false;
-
-//متغییر های شما
-$color-a: #0E71EB;
-$color-b: #21C08B; 

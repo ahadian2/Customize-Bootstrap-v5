@@ -133,6 +133,12 @@ $color-b: #21c08b;</code></pre>
 </div>
 
 
+<div dir="rtl">
+<h2>تنظیمات فرم‌ها و دراپ‌دان‌ها</h2>
+<p>در پایین فایل <code>assets/scss/custom/_themes.scss</code> بخش مربوط به Form و Dropdown قرار دارد. این تنظیمات برای همه تم‌ها مشترک است و رنگ‌ها را از متغیرهای هر تم می‌خواند، بنابراین با تغییر رنگ‌ها در بخش هر تم، این اجزا نیز به‌صورت خودکار به‌روزرسانی می‌شوند.</p>
+<img src="assets/img/git/1.png" alt="‌" width="100%">
+</div>
+<pre><code></code></pre>
 
 
 <div dir="rtl">
