@@ -1,0 +1,38 @@
+﻿.theme-btn {
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: inherit;
+}
+
+    .theme-btn:active {
+        transform: scale(0.85);
+    }
+
+/* انیمیشن چرخش */
+.icon-rotate {
+    animation: rotateIcon 0.4s ease;
+}
+
+@keyframes rotateIcon {
+    0% {
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: rotate(90deg) scale(0.5);
+        opacity: 0;
+    }
+
+    51% {
+        transform: rotate(-90deg) scale(0.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
+    }
+}

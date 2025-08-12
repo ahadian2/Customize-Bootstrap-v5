@@ -3,40 +3,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>،TehranIT – Demo</title>
-    <link rel="stylesheet" href="assets/css/bootstrap-custom.rtl.min.css">
-</head>
-<body>
-
-
-    <!-- Bootstrap JS از CDN فقط برای تست (dropdown/modal) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
-
-    <!-- سوییچر تم با ذخیره‌سازی -->
+    <title>TehranIT – Demo</title>
+    <!--Dark Mode-->
     <script>
         (function () {
-            const key = "bs-theme";
-            const root = document.documentElement;
-            // بازیابی تم ذخیره‌شده
-            const saved = localStorage.getItem(key);
-            if (saved) root.setAttribute("data-bs-theme", saved);
-
-            // هندل کلیک روی آیتم‌های تم
-            document.addEventListener("click", (e) => {
-                const btn = e.target.closest("[data-theme]");
-                if (!btn) return;
-                const next = btn.getAttribute("data-theme");
-                root.setAttribute("data-bs-theme", next);
-                localStorage.setItem(key, next);
-                // فعال کردن آیتم انتخاب‌شده
-                document.querySelectorAll("[data-theme]").forEach(i => i.classList.toggle("active", i === btn));
-            });
-
-            // ست اولیه active
-            const cur = root.getAttribute("data-bs-theme");
-            document.querySelectorAll("[data-theme]").forEach(i => i.classList.toggle("active", i.getAttribute("data-theme") === cur));
+            var saved = localStorage.getItem('theme');
+            if (!saved) saved = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-bs-theme', saved);
         })();
     </script>
+    <link rel="stylesheet" href="assets/css/bootstrap-custom.rtl.min.css">
+    <link href="assets/fonts/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="assets/css/MyCss.css" rel="stylesheet" />
+</head>
+<body>
+    <button id="themeToggle" class="theme-btn">
+        <i id="themeIcon" class="bi bi-sun"></i>
+    </button>
 
+    <script src="assets/library/Jquery-3.7.1/jquery-3.7.1.min.js"></script>
+    <script src="assets/library/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/MyJs.js"></script>
 </body>
 </html>
