@@ -1,0 +1,48 @@
+﻿.sec {
+    width: 100%;
+}
+.sec-bg-img {
+    position: relative;
+    background-image: var(--sec-bg-img, none);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: rgba( var(--sec-overlay-color, 37, 37, 37),
+        var(--sec-overlay-opacity, 0.74)
+        );
+        z-index: 1;
+    }
+
+    > * {
+        position: relative;
+        z-index: 2;
+    }
+}
+.sec-bg-light {
+    background-color: var(--bs-sec-bg-light);
+}
+.sec-bg-dark {
+    background-color: var(--bs-sec-bg-dark);
+}
+$max-section-space: 20; // یعنی sec-pt-1 تا sec-pt-20 ساخته میشه
+
+@for $i from 0 through $max-section-space {
+    .sec-pt-#{$i} {
+        padding-top: #{$i}rem;
+    }
+
+    .sec-pb-#{$i} {
+        padding-bottom: #{$i}rem;
+    }
+
+    .sec-py-#{$i} {
+        padding-top: #{$i}rem;
+        padding-bottom: #{$i}rem;
+    }
+}

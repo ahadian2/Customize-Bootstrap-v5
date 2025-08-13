@@ -18,8 +18,16 @@ $theme-colors-extended: (
   "dark":      theme.$dark,
 
   //رنگ‌های سفارشی
-  "color-a": theme.$color-a,
-  "color-b": theme.$color-b
+  "color-a":            theme.$color-a,
+  "color-b":            theme.$color-b,
+  "sec-color-light":    theme.$sec-bg-light,
+  "sec-color-dark":     theme.$sec-bg-dark,
+  "txt-base":          theme.$txt-base,
+  "txt-muted":         theme.$txt-muted,
+  "txt-faint":         theme.$txt-faint,
+  "txt-black-fixed":   theme.$txt-black-fixed,
+  "txt-white-fixed":   theme.$txt-white-fixed,
+  "txt-gray-fixed":    theme.$txt-gray-fixed
 );
 
 
@@ -57,5 +65,8 @@ $theme-colors-extended: (
 /*@use "custom/mixins" as *;*/
 
 //کامپوننت ها
-/*@use "components/buttons";
-@use "components/cards";*/
+@use "components/Section/sec";
+@use "components/Background/_bg-effects";
+@use "components/TextColor/_text-color";
+@use "components/Icon/_dark-mode-icon";
+
